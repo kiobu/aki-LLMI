@@ -10,7 +10,7 @@ namespace LightkeeperDoor
             // Plugin startup logic
             Logger.LogInfo($"Plugin {PluginInfo.PLUGIN_GUID} is loaded!");
 
-            new LightkeeperDoorPatch().Enable();
+            new LLMIPatch().Enable();
 
             Logger.LogInfo("LLMI enabled.");
         }

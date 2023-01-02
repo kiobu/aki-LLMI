@@ -2,8 +2,8 @@
 
   <PropertyGroup>
     <TargetFramework>net472</TargetFramework>
-    <AssemblyName>LightkeeperDoor</AssemblyName>
-    <Description>Lightkeeper door patch</Description>
+    <AssemblyName>LLMI</AssemblyName>
+    <Description>Lightkeeper door patch.</Description>
     <Version>1.0.0</Version>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <LangVersion>latest</LangVersion>
@@ -18,5 +18,18 @@
   
   <ItemGroup Condition="'$(TargetFramework.TrimEnd(`0123456789`))' == 'net'">
     <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.2" PrivateAssets="all" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <ProjectReference Include="..\Aki.Reflection\Aki.Reflection.csproj" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>..\Shared\Hollowed\Assembly-CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Comfort">
+      <HintPath>..\Shared\Managed\Comfort.dll</HintPath>
+    </Reference>
   </ItemGroup>
 </Project>

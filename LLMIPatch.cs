@@ -7,7 +7,7 @@ using Comfort.Common;
 
 namespace LightkeeperDoor
 {
-    class LightkeeperDoorPatch : ModulePatch
+    class LLMIPatch : ModulePatch
     {
         private static string LocalPlayer() => GamePlayerOwner.MyPlayer.ProfileId;
         protected override MethodBase GetTargetMethod()
