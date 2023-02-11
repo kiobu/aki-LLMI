@@ -32,8 +32,8 @@ namespace LightkeeperDoor
             var status = true;
 
             // Set access status for local player.
-            var doorAccess = Singleton<GameWorld>.Instance.BufferZoneController;
-            doorAccess.SetPlayerAccessStatus(player, status);
+            var doorAccess = Singleton<GameWorld>.Instance.BufferZoneController.bufferZoneContainer_0.InnerZone;
+            doorAccess.ChangePlayerAccessStatus(player, status);
 
             return true;
         }
